@@ -135,6 +135,17 @@ $(document).ready(function(){
        $('.more').css('display','none');
     });
 
+    // write.html
+    $('#writeButton').click(function(){
+        localStorage['comment']=$('#input-comment').val();
+        localStorage['url']= $('#input-url').val();
+        localStorage['title']= $('#input-title').val();
+        document.location.href='archive.html';        
+
+    });
+
+
+
 });
 
 
